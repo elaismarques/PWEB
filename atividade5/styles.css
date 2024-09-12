@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.divSimples {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    
+}
+
+h2 {
+    font-size: 24px;
+    color: white;
+}
+
+
+/* Maior que 1920px - Verde */
+@media screen and (min-width: 1921px) {
+    .divSimples {
+        background-color: green;
+    }
+    .h2-color::after {
+        content: "Verde";
+    }
+}
+
+/* Até 1920px - Amarelo */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .divSimples {
+        background-color: yellow;
+    }
+    .h2-color::after {
+        content: "Amarelo";
+    }
+}
+
+/* Até 1366px - Azul bonitinho */
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .divSimples {
+        background-color: rgba(91, 72, 168, 0.881);
+    }
+    .h2-color::after {
+        content: "Azul meio roxo bem bonitinho";
+    }
+}
+/* Até 1080px - Vermelho */
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .divSimples {
+        background-color: rgba(222, 82, 82, 0.881);
+    }
+    .h2-color::after {
+        content: "isso é Vermelho ?";
+    }
+}
+
+/* Até 420px - Azul */
+@media screen and (max-width: 420px) {
+    .divSimples {
+        background-color: rgba(25, 14, 61, 0.913);
+    }
+    .h2-color::after {
+        content: "Azul..eu acho";
+    }
+}
+
+/* Até 768px - Laranja */
+@media (min-width: 421px) and (max-width: 768px) {
+    .divSimples {
+        background-color: orange;
+    }
+    .h2-color::after {
+        content: "Laranja";
+    }
+}
+
+
+
+
+
+
+
+
+
