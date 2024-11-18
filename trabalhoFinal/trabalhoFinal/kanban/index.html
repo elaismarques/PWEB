@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Desenvolvimento de Software</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Atividades</h1>
+    </div>
+
+    <div class="container columns">
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Pendente</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">BackLog</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Em Desenvolvimento</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Concluido</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+    </div>
+
+    <dialog class="confirm-modal">
+      <form method="dialog">
+        <h3>Excluir ????</h3>
+        <p>Tem certeza que deseja excluir esse card ?</p>
+        <div class="preview"></div>
+
+        <menu>
+          <button type="button" id="cancel">Cancelar</button>
+          <button type="submit" id="confirm">Sim, quero excluir.</button>
+        </menu>
+      </form>
+    </dialog>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
